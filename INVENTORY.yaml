@@ -1,9 +1,20 @@
 ---
-fleet_id: WOODFINE-FLEET-01
-owner: jwoodfine
+fleet_id: POINTSAV-FLEET-01
+owner: PointSav Digital Systems™
 status: OPERATIONAL
 matrix_tier: Tier-4-OS
 ---
+structural_map: |
+  [EXECUTION NODE]: cluster-totebox-corporate-1
+  └── USERSPACE: svc-mediakit-pointsav             <-- (100% Portable PointSav Edge Node)
+      ├── app-mediakit-knowledge/                  <-- (Live rendered frontend)
+      │   └── pointsav-monolith.html                  
+      ├── app-mediakit-telemetry                   <-- (Compiled executable instance | Port 8081)
+      ├── assets/                                  <-- (Local Micro-Vault)
+      │   ├── GeoLite2-City.mmdb                   <-- (Local Offline Geolocation DB)
+      │   └── ledger_telemetry.csv                 <-- (Pre-Resolved Local Target)
+      └── outbox/
+          └── REPORT_POINTSAV_TIMESTAMP.md         <-- (4:00 AM Synthesizer Egress)
 nodes:
   - node_id: NODE-LAPTOP-B
     role: fleet-infrastructure-leased
