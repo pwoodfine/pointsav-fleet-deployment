@@ -9,7 +9,7 @@ This silo serves as the public-facing edge node for PointSav Digital Systems™.
 ## 🏛️ Autonomous Architecture
 - **Presentation:** `app-mediakit-knowledge` (Zero-Execution Static Assets)
 - **Intelligence:** `app-mediakit-telemetry` (Stateless Rust HTTP Server)
-- **Micro-Vault:** Internal `assets/` and `ledger/` directories for local offline dependencies and IP-masked telemetry logging.
+- **Micro-Vault:** Internal `assets/` and `ledger/` directories for local offline dependencies.
 
 ---
 *© 2026 PointSav Digital Systems™.*
