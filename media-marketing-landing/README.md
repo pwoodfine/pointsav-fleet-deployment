@@ -1,28 +1,12 @@
-<div align="center">
+# 🌐 PointSav Digital Systems: Media & Marketing Landing
 
-# Edge Delivery Node | Nodo de Entrega de Borde
-### *An autonomous deployment manifest for sovereign public infrastructure.*
+This directory contains the operational deployment files for the PointSav primary digital interface. It serves as the generic reference implementation of the Sovereign Data Protocol.
 
-</div>
+## Operational Guides
+- [➔ GUIDE-01-Telemetry-Operations.md](./GUIDE-01-Telemetry-Operations.md): Sovereign Telemetry Operations & Compliance.
 
-<br/>
+## Architecture
+- `index.html`: The monolithic, Zero-Cookie, PWA-enabled application interface.
+- `app-mediakit-telemetry/`: The execution domain for the compiled Rust `telemetry-daemon` and `omni-matrix-engine` binaries.
 
-> [!WARNING]
-> **SOVEREIGN FRAMEWORK DECLARATION**
-> This repository is a reference implementation of the Sovereign Data Protocol. It enforces absolute data isolation. It contains zero active proprietary network payloads.
-
-| Architecture Tier | Component Role | Governance Anchor |
-| :--- | :--- | :--- |
-| 🟡 Provisioning | Edge Node | Sovereign Disclosure Standard |
-
-## 📖 Architectural Audit Placeholder
-This directory serves as a structural placeholder. It maps directly to the edge delivery matrix. 
-
-## ⚙️ Execution Playbooks
-This index routes to the physical execution commands required to provision this node.
-
-* [➔ GUIDE-PROVISION-NODE](GUIDE-PROVISION-NODE.md)
-
----
-*© 2026 PointSav Digital Systems™.*
-*Public Architectural Blueprint. Governed by the Sovereign Data Protocol.*
+*Note: Modifications to the UI/UX must adhere to Institutional Brutalism standards.*
